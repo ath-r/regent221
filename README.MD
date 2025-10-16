@@ -2,13 +2,13 @@
 
 This repo is a proof-of-concept of making a neural model of an amp from a SPICE model.
 
-![](regent221.png)
+<img src="regent221.png" width=25% />
 
 The specimen here is the Regent 221 combo apmplifier from GDR. We will use a NAM model to simulate the preamp section of this amp. The EQ bit is omitted from simulation. As it's a classic tone stack circuit, it's trivial to implement in DSP.
 
 SPICE simulation can be run from KiCAD or with ngspice directly.
 
-![](schematic.svg)
+<img src="schematic.svg" width=100% />
 
 ## SPICE simulation file structure
 
