@@ -1,0 +1,69 @@
+.title KiCad schematic
+.include "/home/ath/Repos/regent221/preamp/BC.CIR"
+.include "/home/ath/Repos/regent221/preamp/FILE.CIR"
+.save all
+.probe alli
+.probe p(R8)
+.probe p(R7)
+.probe p(C4)
+.probe p(R2)
+.probe p(R3)
+.probe p(R6)
+.probe p(C5)
+.probe p(R10)
+.probe p(C6)
+.probe p(R12)
+.probe p(R9)
+.probe p(C7)
+.probe p(R15)
+.probe p(C8)
+.probe p(Q2)
+.probe p(R13)
+.probe p(R14)
+.probe p(V1)
+.probe p(C3)
+.probe p(R11)
+.probe p(XV2)
+.probe p(R5)
+.probe p(C1)
+.probe p(R1)
+.probe p(R4)
+.probe p(Q1)
+.probe p(C2)
+.param infile="inputvalues"
+.tran 20.8333333u 190
+.control
+set controlswait
+set wr_vecnames
+set wr_singlescale
+option numdgt=10
+wrdata output v(out)
+.endc
+R8 Net-_R7-Pad2_ Net-_C5-Pad2_ 1k
+R7 Net-_C4-Pad2_ Net-_R7-Pad2_ 1k
+C4 Net-_Q1-E_ Net-_C4-Pad2_ 2.2u
+R2 Net-_R2-Pad1_ Net-_Q1-B_ 1Meg
+R3 Net-_R2-Pad1_ Net-_Q1-C_ 22k
+R6 Net-_R2-Pad1_ VCC 12k
+C5 Net-_Q1-C_ Net-_C5-Pad2_ 0.47u
+R10 VCC Net-_Q2-B_ 1Meg
+C6 Net-_C5-Pad2_ Net-_Q2-B_ 0.47u
+R12 Net-_Q2-B_ Net-_C8-Pad1_ 120k
+R9 GND Net-_C5-Pad2_ 100k
+C7 Net-_Q2-B_ Net-_Q2-C_ 47p
+R15 out GND 100k
+C8 Net-_C8-Pad1_ Net-_Q2-E_ 22u
+Q2 Net-_Q2-C_ Net-_Q2-B_ Net-_Q2-E_ BC238BP temp=25
+R13 GND Net-_C8-Pad1_ 390
+R14 Net-_Q2-E_ GND 1k
+V1 VCC GND DC 22 
+C3 Net-_Q2-C_ out 0.47u
+R11 VCC Net-_Q2-C_ 10k
+XV2 in GND fs
+R5 Net-_Q1-E_ GND 33k
+C1 Net-_C1-Pad1_ Net-_Q1-B_ 0.47u
+R1 in Net-_C1-Pad1_ 1k
+R4 Net-_Q1-B_ GND 1Meg
+Q1 Net-_Q1-C_ Net-_Q1-B_ Net-_Q1-E_ BC239BP temp=25
+C2 Net-_Q1-B_ Net-_Q1-E_ 1n
+.end
