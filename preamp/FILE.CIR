@@ -1,0 +1,6 @@
+* filesource for KiCad
+* single output voltage versus time
+.subckt fs 1 2 params: infile='infile'
+a8 %vd([1 2]) filesrc
+.model filesrc filesource (file=infile amploffset=[0 0] amplscale=[1 1] timerelative=true)
+.ends

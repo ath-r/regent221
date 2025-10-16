@@ -1,0 +1,7 @@
+*.lck
+fp-info-cache
+preamp-backups
+*.wbk
+
+inputvalues
+output
