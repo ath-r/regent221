@@ -1132,7 +1132,7 @@
 	)
 	(text ".tran 20.8333333u 190\n.control\nset controlswait\nset wr_vecnames\nset wr_singlescale\noption numdgt=10\nwrdata output v(out)\n.endc"
 		(exclude_from_sim no)
-		(at 88.9 48.514 0)
+		(at 61.722 65.786 0)
 		(effects
 			(font
 				(size 1.27 1.27)

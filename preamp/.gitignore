@@ -1,6 +1,8 @@
 *.lck
 fp-info-cache
 preamp-backups
+preamp.kicad_pro
+preamp.kicad_prl
 *.wbk
 
 inputvalues
