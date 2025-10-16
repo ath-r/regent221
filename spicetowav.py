@@ -26,4 +26,4 @@ vrms_out = np.sqrt(np.sum(y_out ** 2) / SIZE)
 
 y_out *= vrms_in / vrms_out
 
-sf.write(OUT, y_out, samplerate, 'FLOAT')
+sf.write(OUT, y_out, samplerate, 'PCM_24')
